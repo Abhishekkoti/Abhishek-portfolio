@@ -35,7 +35,7 @@ export default async function ProjectPage({ params }: Props) {
           <Link className="text-slate-600 hover:text-slate-900" href="/#contact">
             Contact
           </Link>
-          <a className="text-slate-600 hover:text-slate-900" href="/resume.pdf">
+          <a className="text-slate-600 hover:text-slate-900" href="/Koti_Abhishek_Resume.pdf">
             Resume
           </a>
         </div>
@@ -73,8 +73,11 @@ export default async function ProjectPage({ params }: Props) {
             </Link>
 
             <a
-              href="/Koti Abhishek.pdf"
-              className="rounded-xl border border-slate-200 bg-white px-5 py-2 text-sm text-slate-800 hover:bg-slate-50"
+              className="text-slate-600 hover:text-slate-900"
+              href="/Koti_Abhishek_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            
             >
               Download Resume
             </a>

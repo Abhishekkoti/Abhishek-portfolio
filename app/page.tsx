@@ -21,7 +21,7 @@ export default function Home() {
           <a className="text-slate-600 hover:text-slate-900" href="#contact">
             Contact
           </a>
-          <a className="text-slate-600 hover:text-slate-900" href="/Koti Abhishek.pdf">
+          <a className="text-slate-600 hover:text-slate-900" href="/Koti_Abhishek_Resume.pdf">
             Resume
           </a>
         </div>
