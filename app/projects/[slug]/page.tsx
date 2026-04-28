@@ -35,7 +35,7 @@ export default async function ProjectPage({ params }: Props) {
           <Link className="text-slate-600 hover:text-slate-900" href="/#contact">
             Contact
           </Link>
-          <a className="text-slate-600 hover:text-slate-900" href="/Koti_Abhishek_Resume.pdf">
+          <a className="text-slate-600 hover:text-slate-900" href="/resume.pdf">
             Resume
           </a>
         </div>
