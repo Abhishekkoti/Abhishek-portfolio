@@ -21,84 +21,107 @@ export default function Home() {
           <a className="text-slate-600 hover:text-slate-900" href="#contact">
             Contact
           </a>
-          <a className="text-slate-600 hover:text-slate-900" href="/resume.pdf">
+          <a className="text-slate-600 hover:text-slate-900" href="/Koti Abhishek.pdf">
             Resume
           </a>
         </div>
       </div>
 
       {/* Hero */}
-      <header className="mt-12 grid gap-10 md:grid-cols-2 md:items-center">
-        <div>
-          <p className="text-sm text-slate-600">
-            Senior Software Developer • 7+ Years • Java / Spring / React / AWS
-          </p>
+<header className="mt-12 grid gap-10 md:grid-cols-2 md:items-center">
+  <div>
+    <p className="text-sm text-slate-600">
+      Senior UI/UX Engineer • 8+ Years • React / TypeScript / UX / AI UI
+    </p>
 
-          <h1 className="mt-3 text-5xl font-semibold tracking-tight">
-            Abhishek <span className="text-accent">Koti</span>
-          </h1>
+    <h1 className="mt-3 text-5xl font-semibold tracking-tight">
+      Abhishek <span className="text-accent">Koti</span>
+    </h1>
 
-          <p className="mt-5 max-w-xl leading-relaxed text-slate-700">
-            I build secure, scalable enterprise platforms across healthcare,
-            banking, travel, and operations — with strong focus on{" "}
-            <b>microservices</b>, <b>event-driven systems</b>, and <b>AWS</b>.
-            This portfolio is organized as engineering case studies:
-            <span className="font-medium text-slate-900">
-              {" "}
-              problem → architecture → implementation → impact
-            </span>
-            .
-          </p>
+    {/* NEW ROLE TITLE */}
+    <h2 className="mt-3 text-2xl font-medium text-slate-800">
+      Senior UI/UX Engineer | React & TypeScript
+    </h2>
 
-          <div className="mt-7 flex flex-wrap gap-3">
-            <a
-              href="#projects"
-              className="rounded-xl bg-accent px-5 py-2 text-sm font-medium text-white hover:opacity-95"
-            >
-              View Case Studies
-            </a>
+    {/* UPDATED DESCRIPTION */}
+    <p className="mt-5 max-w-xl leading-relaxed text-slate-700">
+      I build scalable, high-performance web applications with a strong focus on
+      intuitive user experience, developer workflows, and modern UI systems.
+      I specialize in designing workflow-driven platforms such as developer
+      portals, CI/CD dashboards, and real-time applications.
+      <span className="font-medium text-slate-900">
+        {" "}
+        My work focuses on UX, performance, and intelligent UI patterns.
+      </span>
+    </p>
 
-            <a
-              href="/resume.pdf"
-              className="rounded-xl border border-slate-200 bg-white px-5 py-2 text-sm text-slate-800 hover:bg-slate-50"
-            >
-              Download Resume
-            </a>
+    {/* TAGS ADDED */}
+    <div className="mt-5 flex flex-wrap gap-3">
+      {["React", "TypeScript", "UX Design", "AI UI", "Developer Experience"].map(
+        (tag) => (
+          <span
+            key={tag}
+            className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-700"
+          >
+            {tag}
+          </span>
+        )
+      )}
+    </div>
 
-            <a
-              href="mailto:abhishekkoti2122@gmail.com"
-              className="rounded-xl border border-slate-200 bg-white px-5 py-2 text-sm text-slate-800 hover:bg-slate-50"
-            >
-              Email
-            </a>
-          </div>
+    <div className="mt-7 flex flex-wrap gap-3">
+      <a
+        href="#projects"
+        className="rounded-xl bg-accent px-5 py-2 text-sm font-medium text-white hover:opacity-95"
+      >
+        View Case Studies
+      </a>
 
-          <p className="mt-6 text-sm text-slate-600">
-            Phone: <span className="text-slate-900">(516) 324-3489</span> • Email:{" "}
-            <span className="text-slate-900">abhishekkoti2122@gmail.com</span>
-          </p>
-        </div>
+      <a
+        href="/resume.pdf"
+        className="rounded-xl border border-slate-200 bg-white px-5 py-2 text-sm text-slate-800 hover:bg-slate-50"
+      >
+        Download Resume
+      </a>
 
-        {/* Highlights */}
-        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <p className="text-sm font-semibold text-slate-900">Highlights</p>
+      <a
+        href="mailto:abhishekkoti2122@gmail.com"
+        className="rounded-xl border border-slate-200 bg-white px-5 py-2 text-sm text-slate-800 hover:bg-slate-50"
+      >
+        Email
+      </a>
+    </div>
 
-          <div className="mt-4 grid gap-3">
-            <Highlight
-              title="Backend"
-              body="Java 8–17, Spring Boot, Security (OAuth2/JWT/RBAC), Hibernate/JPA, REST APIs, Microservices."
-            />
-            <Highlight
-              title="Frontend"
-              body="React, TypeScript, Angular, SPA architecture, routing, state management, accessibility-first UI."
-            />
-            <Highlight
-              title="Cloud & DevOps"
-              body="AWS EC2/S3/RDS/Aurora, SQS/SNS, CloudWatch, Docker, Jenkins CI/CD, SonarQube gates."
-            />
-          </div>
-        </div>
-      </header>
+    <p className="mt-6 text-sm text-slate-600">
+      Phone: <span className="text-slate-900">(516) 324-3489</span> • Email:{" "}
+      <span className="text-slate-900">abhishekkoti2122@gmail.com</span>
+    </p>
+  </div>
+
+  {/* Highlights */}
+  <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+    <p className="text-sm font-semibold text-slate-900">Highlights</p>
+
+    <div className="mt-4 grid gap-3">
+      <Highlight
+        title="Frontend & UI"
+        body="React 18/19, TypeScript, Redux Toolkit, React Query, Hooks, scalable component-driven UI development."
+      />
+      <Highlight
+        title="UX & Design"
+        body="Figma, design systems, wireframing, UX workflows, developer portals, CI/CD dashboards, usability optimization."
+      />
+      <Highlight
+        title="Performance & Real-Time"
+        body="Code splitting, lazy loading, memoization, WebSockets, Server-Sent Events (SSE), high-performance UI systems."
+      />
+      <Highlight
+        title="AI & Modern UI"
+        body="Copilot-style interfaces, LLM integrations, agent workflows, intelligent UI interactions."
+      />
+    </div>
+  </div>
+</header>
 
       {/* Projects */}
       <section id="projects" className="mt-16">

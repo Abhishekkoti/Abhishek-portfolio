@@ -45,7 +45,7 @@ export default async function ProjectPage({ params }: Props) {
       <header className="mt-10 grid gap-6 md:grid-cols-3">
         <div className="md:col-span-2">
           <span className="inline-flex rounded-full bg-accent-soft px-3 py-1 text-xs font-medium text-accent">
-            Case Study
+            UI/UX Case Study
           </span>
 
           <p className="mt-4 text-sm text-slate-600">
@@ -73,17 +73,19 @@ export default async function ProjectPage({ params }: Props) {
             </Link>
 
             <a
-              href="/resume.pdf"
+              href="/Koti Abhishek.pdf"
               className="rounded-xl border border-slate-200 bg-white px-5 py-2 text-sm text-slate-800 hover:bg-slate-50"
             >
-              Download resume
+              Download Resume
             </a>
           </div>
         </div>
 
         {/* Stack */}
         <aside className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <p className="text-sm font-semibold text-slate-900">Tech Stack</p>
+          <p className="text-sm font-semibold text-slate-900">
+            UI / Tech Stack
+          </p>
           <div className="mt-3 flex flex-wrap gap-2">
             {project.stack.map((s) => (
               <span
@@ -98,20 +100,21 @@ export default async function ProjectPage({ params }: Props) {
       </header>
 
       {/* Sections */}
-      <Section title="Problem">
+
+      <Section title="User Problem / UX Challenge">
         <Bullets items={project.problem} />
       </Section>
 
-      <Section title="Solution">
+      <Section title="UX Solution & Design Approach">
         <Bullets items={project.solution} />
       </Section>
 
-      <Section title="Architecture">
+      <Section title="Frontend Architecture & UI Design">
         <Bullets items={project.architecture} />
       </Section>
 
       {project.architectureDiagram && (
-        <Section title="Architecture Diagram">
+        <Section title="UI Architecture / Component Design">
           <pre className="overflow-auto rounded-xl border border-slate-200 bg-slate-50 p-5 text-xs leading-relaxed text-slate-800">
             {project.architectureDiagram}
           </pre>
@@ -122,16 +125,16 @@ export default async function ProjectPage({ params }: Props) {
         <Bullets items={project.contributions} />
       </Section>
 
-      <Section title="Security & Quality">
+      <Section title="Performance & UI Optimization">
         <Bullets items={project.securityQuality} />
       </Section>
 
-      <Section title="Impact">
+      <Section title="User Impact & Experience Improvements">
         <Bullets items={project.impact} />
       </Section>
 
       <footer className="mt-14 border-t border-slate-200 pt-6 text-sm text-slate-500">
-        © {new Date().getFullYear()} Abhishek Koti • Case-study portfolio
+        © {new Date().getFullYear()} Abhishek Koti • UI/UX case-study portfolio
       </footer>
     </main>
   );
